@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".PrincipalActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="199dp"
+                android:layout_height="201dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/logo_pollo_engorde" />
+
+            <Switch
+                android:id="@+id/btnAlimentacion"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="Alimentación" />
+
+            <Switch
+                android:id="@+id/btnAgua"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/btnAlimentacion"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="Agua" />
+
+            <Switch
+                android:id="@+id/btnVentilacion"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/btnAgua"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="Ventilación" />
+
+            <Switch
+                android:id="@+id/btnFocos"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/btnVentilacion"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="Focos" />
+
+            <Switch
+                android:id="@+id/btnAutomatico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Modo Automático"
+                android:textStyle="bold"
+                android:textColor="#2EB22C"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnCerrar"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:background="#CB4335"
+                android:text="Cerrar Sesión"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                app:backgroundTint="#B00020" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

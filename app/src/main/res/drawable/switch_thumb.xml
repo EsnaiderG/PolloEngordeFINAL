@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Cambia el color a tu preferencia -->
+    <corners android:radius="100dp" /> <!-- Cambia el radio de las esquinas a tu preferencia -->
+    <size android:width="24dp" android:height="24dp" /> <!-- Cambia el tamaño a tu preferencia -->
+</shape>
